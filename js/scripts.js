@@ -7,12 +7,12 @@ var countUp = function() {
 
     for (var i = 1; i <= countTo; i++) {
       var ping = "PING"
-      // if (i % 3 === 0) {
-		  //     numberBank.push(ping);
-		  //     }
-      // else {
-      //     numberBank.push(i);
-      // }
+      if (i % 3 === 0) {
+		      numberBank.push(ping);
+		      }
+      else {
+          numberBank.push(i);
+      }
     }
   return numberBank;
 };

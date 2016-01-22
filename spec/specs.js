@@ -8,4 +8,8 @@ describe('pingPong', function() {
   it("will replace multiples of 3 with the word PING", function() {
     expect(countUp()).to.eql([1,2,"PING",4,5,"PING",7,8,"PING",10]);
   });
+
+  it("will replace multiples of 3 with the word PING and multiples of 5 with PONG", function() {
+    expect(countUp()).to.eql([1,2,"PING",4,"PONG","PING",7,8,"PING","PONG"]);
+  });
 });
