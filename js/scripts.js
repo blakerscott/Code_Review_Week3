@@ -1,6 +1,6 @@
 
 // var countTo = document.getElementById("pingpong");
-var countTo = 10
+var countTo = 17
 
 var countUp = function() {
     var numberBank = [];
@@ -8,7 +8,11 @@ var countUp = function() {
     for (var i = 1; i <= countTo; i++) {
       var ping = "PING"
       var pong = "PONG"
-      if (i % 3 === 0) {
+      var pingpong = "PINGPONG"
+      if (i % 15 === 0) {
+    		  numberBank.push(pingpong);
+    		  }
+      else if (i % 3 === 0) {
 		      numberBank.push(ping);
 		      }
       else if (i % 5 === 0) {
