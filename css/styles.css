@@ -1,0 +1,32 @@
+
+body {
+    background-color: lightgray;
+
+
+}
+
+
+div.top {
+    font-size: 72px;
+
+    text-align: center;
+    background-color: #FFE4C4;
+
+
+}
+
+div.top {
+    position:absolute;
+    left:0; right:0;
+    height: 92px;
+}
+.left {
+    position:absolute;
+    left:0; top:92px; bottom: 0;
+    width: 178px;
+    background-color: DarkSeaGreen;
+}
+.main {
+    position: absolute;
+    left:178px; top:92px; right:0; bottom:0;
+}
