@@ -7,9 +7,13 @@ var countUp = function() {
 
     for (var i = 1; i <= countTo; i++) {
       var ping = "PING"
+      var pong = "PONG"
       if (i % 3 === 0) {
 		      numberBank.push(ping);
 		      }
+      else if (i % 5 === 0) {
+    		  numberBank.push(pong);
+    		  }
       else {
           numberBank.push(i);
       }
