@@ -18,10 +18,6 @@ No setup required.  Just fire up your favorite browser and give it a go.
 
 None
 
-## Support and contact details
-
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
-
 ## Technologies Used
 
 Bootstrap,JS,JQuery,CSS,HTML
