@@ -1,8 +1,8 @@
 
-// var countTo = document.getElementById("pingpong");
-var countTo = 17
 
-var countUp = function() {
+
+
+var gamePlay = function(countTo) {
     var numberBank = [];
 
     for (var i = 1; i <= countTo; i++) {
@@ -25,17 +25,31 @@ var countUp = function() {
   return numberBank;
 };
 
-
-
-
-
-
-$(document).ready(function(){
-  $("form").submit(function(event){
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    $("ul").empty();
     var countTo = parseInt($("input#countTo").val());
-    $(".result").text(countUp(countTo, countBy));
+    var pingPongOutput = gamePlay(countTo);
+    pingPongOutput.forEach(function(i) {
+      $("#pingPongCode").append("<li>" + i + "</li>");
+    });
+    $("#pingPongCode").show();
 
     event.preventDefault();
   });
-  //event.preventDefault();
 });
+
+
+
+
+
+
+// $(document).ready(function(){
+//   $("form").submit(function(event){
+//     var countTo = parseInt($("#countTo").val());
+//     $("#result").text(gamePlay(countTo));
+//
+//     event.preventDefault();
+//   });
+//
+// });
